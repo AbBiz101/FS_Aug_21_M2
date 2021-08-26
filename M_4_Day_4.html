@@ -47,16 +47,20 @@
         border-color: cornsilk;
       }
       .grouped-list {
+        display: inline;
         border-color: cornsilk;
         position: relative;
         left: 620px;
-        top: 130px;
+        margin: 0;
+        top: 120px;
+        padding: 0;
       }
       .name-list {
+        display: inline;
         border-color: cornsilk;
         position: relative;
         left: 260px;
-        top: 107px;
+        top: 120px;
       }
     </style>
   </head>
@@ -69,26 +73,54 @@
       placeholder="Name of the student"
       size="35px"
     />
-    <input class="number-input" type="number" placeholder="Number Of Groups" />
+    <input
+      class="number-input"
+      type="number"
+      placeholder="Students Per Group"
+    />
     <div>
       <button type="button" class="btn btn-primary">Submit</button>
       <button type="button" class="btn btn-info">Submit</button>
       <button type="button" class="btn btn-secondary">GENERATE LIST!</button>
     </div>
+    <div class="contaner">
+      <div class="row">
+        <div class= col-1">
+          <ul class="name-list">
+
+          </ul>
+        </div>
+        <div class="col-2">
+          <ol class="grouped-list">
+
+          </ol>
+        </div>
+      </div>
+    </div>
 
     <script>
       let names = document.querySelector(".name-input");
       let number = document.querySelector(".number-input");
+      let list = document.querySelector(".contaner");
       let nameList = [];
       let groupedlist = [];
       let groupnum;
-      let newDiv = document.createElement("article");
+      let node = document.createElement("li");
       document
         .querySelector(".btn-primary")
         .addEventListener("click", function () {
           console.log(names.value);
           nameList.push(names.value);
           console.log(nameList);
+          for (let i=0; i<nameList.length;i++){
+              let xx=node.appendChild(document.createTextNode(names.value));
+              node.appendChild(xx);
+              document.querySelector(".name-list").appendChild(node)
+            }
+
+
+
+          
         });
       document
         .querySelector(".btn-info")
@@ -106,13 +138,95 @@
 
           console.log(newlist);
         });
+      /*
 
-      //let userName = document.getElementsByClassName("name-input").value;
-      //let groupnum = document.getElementsByClassName("number-input").value;
+<script>
+    var arr = new Array();   
+    function yeah()
+    {
+    arr = prompt("Enter your names").split(",")
+    console.log(arr);
+    //var random = arr[Math.floor(Math.random() * arr.length)];
+    var allStudents ="";
 
-      //let nameList = [];
+    for(var i=0; i<arr.length; i++) {
+        allStudents += arr[i] + "<br/>\n";
+    }
 
-      //let list = document.createElement("h1");
+     document.getElementById("h2").innerHTML = allStudents;
+    }
+
+
+    function groups()
+    {  
+        var arr = prompt("Enter your names").split(",");
+
+        var groups = document.getElementById("groups").value;
+        var perGrp = document.getElementById("per_grp").value;
+
+        var innerText = "<h4>All</h4> ";
+        for(var i=0; i<arr.length; i++) {
+            innerText += arr[i] + ",";
+        }
+        innerText += "<br/>\n";            
+
+
+        arr = shuffleArray(arr);
+
+        var finalGroups = new Array();
+
+        for(var i=0; i<groups; i++) {
+            // assign shuffled elements
+            var grpArr = "";
+            for(j=0; j<perGrp; j++) {
+                grpArr += arr[0] + ",";
+                arr.shift(); // removes first element from array    
+            }
+
+            grpArr = grpArr.substring(0,grpArr.length - 1);
+            finalGroups[i] = grpArr;
+        }
+
+
+
+
+        innerText += "<h4>Groups</h4><br/>\n";
+        innerText += "<table width='100%' border='1'><tr>\n";           
+        for(var i=0; i<groups; i++) {
+            // print groups
+            var j=i+1;
+            var grpArr = finalGroups[i].split(",");
+            innerText += "<td>Group " +j+"<br>";
+            for(var k=0; k < grpArr.length; k++){
+              innerText += grpArr[k] + "<br>";
+            }
+
+            innerText += "</td>\n";
+        }
+        innerText += "</tr></table>\n";
+
+        document.getElementById("FinalGroups").innerHTML = innerText;
+
+
+   } 
+
+   
+    * Randomize array element order in-place.
+    * Using Durstenfeld shuffle algorithm.
+    
+   function shuffleArray(array) {
+       for (var i = array.length - 1; i > 0; i--) {
+           var j = Math.floor(Math.random() * (i + 1));
+           var temp = array[i];
+           array[i] = array[j];
+           array[j] = temp;
+       }
+       return array;
+   }
+
+
+
+*/
     </script>
 
     <script
