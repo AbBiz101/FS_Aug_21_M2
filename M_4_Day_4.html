@@ -41,10 +41,22 @@
       }
       .btn-secondary {
         position: relative;
-        left: 300px;
+        left: 290px;
         top: 85px;
         background-color: rgb(6, 39, 102);
         border-color: cornsilk;
+      }
+      .grouped-list {
+        border-color: cornsilk;
+        position: relative;
+        left: 620px;
+        top: 130px;
+      }
+      .name-list {
+        border-color: cornsilk;
+        position: relative;
+        left: 260px;
+        top: 107px;
       }
     </style>
   </head>
@@ -59,9 +71,15 @@
     />
     <input class="number-input" type="number" placeholder="Number Of Groups" />
     <div>
-      <button type="button" class="btn btn-primary">Submit</button>
-      <button type="button" class="btn btn-info">Submit</button>
-      <button type="button" class="btn btn-secondary">GENERATE LIST!</button>
+      <button onclick="getName()" type="button" class="btn btn-primary">
+        Submit
+      </button>
+      <button onclick="groupNum()" type="button" class="btn btn-info">
+        Submit
+      </button>
+      <button onclick="generate()" type="button" class="btn btn-secondary">
+        GENERATE LIST!
+      </button>
     </div>
 
     <script
@@ -74,10 +92,21 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     >
-      let userName=document.getElementsByClassName(name-input)
-      let groupnum=document.getElementsByClassName(number-input)
+      let userName=document.getElementsByClassName("name-input")
+      let groupnum=document.getElementsByClassName("number-input")
       let list=document.createElement('list')
-      list.innerHTML=`${name-input}`
+      list.innerHTML=`${userName.value}`
+      let nameList=[]
+      function getName(){
+          nameList.push(userName.value)
+          console.log(nameList);
+      }
+      function groupNum() {
+
+      }
+      function generate(){
+
+      }
 
         let x;
     </script>
