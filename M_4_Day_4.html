@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 39%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: aliceblue;
+      }
+      body > input {
+        position: relative;
+        left: 260px;
+        top: 20px;
+      }
+      .btn-primary {
+        position: relative;
+        left: 360px;
+        top: 25px;
+        border-color: cornsilk;
+      }
+      .btn-info {
+        position: relative;
+        left: 520px;
+        top: 25px;
+        border-color: cornsilk;
+      }
+      .btn-secondary {
+        position: relative;
+        left: 300px;
+        top: 85px;
+        background-color: rgb(6, 39, 102);
+        border-color: cornsilk;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center">Strive Team Generator</h1>
+    <input
+      class="name-input"
+      type="text"
+      placeholder="Name of the student"
+      size="35px"
+    />
+    <input class="number-input" type="number" placeholder="Number Of Groups" />
+    <div>
+      <button type="button" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-info">Submit</button>
+      <button type="button" class="btn btn-secondary">GENERATE LIST!</button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    >
+      let userName=document.getElementsByClassName(name-input)
+      let groupnum=document.getElementsByClassName(number-input)
+      let list=document.createElement('list')
+      list.innerHTML=`${name-input}`
+
+        let x;
+    </script>
+  </body>
+</html>
+
+<!---
+
+
+
+-->
+
+<!--
+    WELCOME TO THE STRIVE TEAM GENERATOR!
+
+    In this app you will generate teams and assign the participants to them.
+    You will use the Bootstrap components for the elements of your app.
+
+    The features are the following:
+    - The user should be able to add a list of names, find a way to get the user input and fill a list with the new name.
+    - The user should be able to set the number of teams he wants, so that they will be generated. A team is just another list to be displayed.
+    - An "Assign" button will be required in order to launch the team generation functionality.
+    - Every time the user clicks on the "Assign" button, a random name is placed in a team and removed from the initial list.
+    - Each team should be inside a "column" to be responsive.
+    - [EXTRA] Create a button to remove a user from a team, and putting him back in the main list, waiting to be reassigned.
+    - [EXTRA] Create a button to reset the state of the app.
+-->
