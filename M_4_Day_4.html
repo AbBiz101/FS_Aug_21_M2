@@ -129,7 +129,7 @@
         .addEventListener("click", function () {
           nameList = nameList.sort((a, b) => 0.5 - Math.random());
           console.log(nameList);
-          for (let i; i<nameList.length;i+=groupnum){
+          for (let i=0; i<nameList.length;i+=groupnum){
             groupedlist.push(nameList.slice(i,i+groupnum))
           }
           console.log(groupedlist);
@@ -139,94 +139,14 @@
           document.querySelector(".grouped-list").appendChild(node)
         });
 
-      /*
-
-<script>
-    var arr = new Array();   
-    function yeah()
-    {
-    arr = prompt("Enter your names").split(",")
-    console.log(arr);
-    //var random = arr[Math.floor(Math.random() * arr.length)];
-    var allStudents ="";
-
-    for(var i=0; i<arr.length; i++) {
-        allStudents += arr[i] + "<br/>\n";
-    }
-
-     document.getElementById("h2").innerHTML = allStudents;
-    }
-
-
-    function groups()
-    {  
-        var arr = prompt("Enter your names").split(",");
-
-        var groups = document.getElementById("groups").value;
-        var perGrp = document.getElementById("per_grp").value;
-
-        var innerText = "<h4>All</h4> ";
-        for(var i=0; i<arr.length; i++) {
-            innerText += arr[i] + ",";
-        }
-        innerText += "<br/>\n";            
-
-
-        arr = shuffleArray(arr);
-
-        var finalGroups = new Array();
-
-        for(var i=0; i<groups; i++) {
-            // assign shuffled elements
-            var grpArr = "";
-            for(j=0; j<perGrp; j++) {
-                grpArr += arr[0] + ",";
-                arr.shift(); // removes first element from array    
-            }
-
-            grpArr = grpArr.substring(0,grpArr.length - 1);
-            finalGroups[i] = grpArr;
-        }
-
-
-
-
-        innerText += "<h4>Groups</h4><br/>\n";
-        innerText += "<table width='100%' border='1'><tr>\n";           
-        for(var i=0; i<groups; i++) {
-            // print groups
-            var j=i+1;
-            var grpArr = finalGroups[i].split(",");
-            innerText += "<td>Group " +j+"<br>";
-            for(var k=0; k < grpArr.length; k++){
-              innerText += grpArr[k] + "<br>";
-            }
-
-            innerText += "</td>\n";
-        }
-        innerText += "</tr></table>\n";
-
-        document.getElementById("FinalGroups").innerHTML = innerText;
-
-
-   } 
-
-   
-    * Randomize array element order in-place.
-    * Using Durstenfeld shuffle algorithm.
-    
-   function shuffleArray(array) {
-       for (var i = array.length - 1; i > 0; i--) {
-           var j = Math.floor(Math.random() * (i + 1));
-           var temp = array[i];
-           array[i] = array[j];
-           array[j] = temp;
-       }
-       return array;
-   }
-
-
-
+/*
+let input = [1,2,3,4,5,6,7,8,9];
+let chunked = []
+let size = 3;
+for (let i = 0;  i < input.length; i += size) {
+  chunked.push(input.slice(i, i + size))
+}
+console.log(chunked);
 */
     </script>
 
