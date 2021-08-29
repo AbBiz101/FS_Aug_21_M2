@@ -127,27 +127,24 @@
       document
         .querySelector(".btn-secondary")
         .addEventListener("click", function () {
-          nameList = nameList.sort((a, b) => 0.5 - Math.random());
-          console.log(nameList);
-          for (let i=0; i<nameList.length;i+=groupnum){
+          let orderList = nameList.sort((a, b) => 0.5 - Math.random());
+          console.log(orderList);
+          for (let i=0; i<orderList.length;i+=groupnum){
+            console.log(orderList.slice(i,i+groupnum)); 
+            let node = document.createElement("li");
+            let listText=document.createTextNode(orderList.slice(i,i+3));
+            node.appendChild(listText);
+            document.querySelector(".grouped-list").appendChild(node)
             groupedlist.push(nameList.slice(i,i+groupnum))
           }
-          console.log(groupedlist);
-          let node = document.createElement("li");
-          let listText=document.createTextNode(groupedlist);
-          node.appendChild(listText);
-          document.querySelector(".grouped-list").appendChild(node)
         });
+        let input = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        let size = 3;
+        for (let i = 0;  i < input.length; i += size) {
+          console.log(input.slice(i, i + size))
+        }
 
-/*
-let input = [1,2,3,4,5,6,7,8,9];
-let chunked = []
-let size = 3;
-for (let i = 0;  i < input.length; i += size) {
-  chunked.push(input.slice(i, i + size))
-}
-console.log(chunked);
-*/
+
     </script>
 
     <script
@@ -163,24 +160,3 @@ console.log(chunked);
   </body>
 </html>
 
-<!---
-
-
-
--->
-
-<!--
-    WELCOME TO THE STRIVE TEAM GENERATOR!
-
-    In this app you will generate teams and assign the participants to them.
-    You will use the Bootstrap components for the elements of your app.
-
-    The features are the following:
-    - The user should be able to add a list of names, find a way to get the user input and fill a list with the new name.
-    - The user should be able to set the number of teams he wants, so that they will be generated. A team is just another list to be displayed.
-    - An "Assign" button will be required in order to launch the team generation functionality.
-    - Every time the user clicks on the "Assign" button, a random name is placed in a team and removed from the initial list.
-    - Each team should be inside a "column" to be responsive.
-    - [EXTRA] Create a button to remove a user from a team, and putting him back in the main list, waiting to be reassigned.
-    - [EXTRA] Create a button to reset the state of the app.
--->
