@@ -71,7 +71,7 @@
         */
 
       .jumbotron h1 {
-        color: brown;
+        color: rgb(241, 4, 4);
       }
 
       .nav-scroller .nav * {
@@ -89,7 +89,7 @@
         background-color: rgb(190, 100, 100);
       }
 
-      .nav-scroller .nav :nth-child(even) {
+      .nav-scroller .nav :nth-child(2n) {
         text-decoration-line: underline;
       }
 
@@ -504,10 +504,10 @@
     </footer>
 
     <script>
-        /*
+      /*
           JS Exercises
           EX11) Write a function to add a new link into the navbar
-          EX12) Write a function to change the color of the main title
+          -EX12) Write a function to change the color of the main title
           EX13) Write a function to change the background of the jumbotron
           EX14) Write a function to remove all the links under "Elsewhere"
           EX15) Write a function to change the column size for heading in jumbotron
@@ -517,10 +517,23 @@
           EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
           EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
       */
-        document.querySelector(".display-4").addEventListener("click", function jambocolor() {
-          text.style.color = "green"
+      document.querySelector("div > h1").addEventListener("click", function () {
+        let cod = document.querySelector("div > h1");
+        cod.style.backgroundColor = "green";
+      });
 
-        }
+      document
+        .querySelector(".jumbotron")
+        .addEventListener("click", function () {
+          let cod = document.querySelector(".jumbotron");
+          cod.style.backgroundColor = "red";
+        });
+
+      document.querySelector(".nav").addEventListener("click", function () {
+        const ol = document.querySelector(".nav");
+        let node = document.createElement("li");
+        ol.appendChild(node);
+      });
     </script>
   </body>
 </html>
