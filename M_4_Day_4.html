@@ -66,6 +66,9 @@
   </head>
 
   <body>
+    <div class="contaner-fluid">
+
+    </div>
     <h1 style="text-align: center">Team Generator</h1>
     <input
       class="name-input"
@@ -100,10 +103,9 @@
 
     <script>
       let names = document.querySelector(".name-input");
-      let number = document.querySelector(".number-input");
+      let num = document.querySelector(".number-input");
       let list = document.querySelector(".contaner");
       let nameList = [];
-      let groupedlist = [];
       let groupnum;
 
       document
@@ -120,30 +122,25 @@
       document
         .querySelector(".btn-info")
         .addEventListener("click", function () {
-          groupnum = number.value;
+          groupnum = Number(num.value)
           console.log(groupnum);
-        });
+      });
 
       document
         .querySelector(".btn-secondary")
         .addEventListener("click", function () {
+          const ol = document.querySelector(".grouped-list")
+          ol.innerHTML = ""
           let orderList = nameList.sort((a, b) => 0.5 - Math.random());
           console.log(orderList);
           for (let i=0; i<orderList.length;i+=groupnum){
-            console.log(orderList.slice(i,i+groupnum)); 
+            console.log(orderList.slice(i,i+groupnum));
+            console.log(i) 
             let node = document.createElement("li");
-            let listText=document.createTextNode(orderList.slice(i,i+3));
-            node.appendChild(listText);
-            document.querySelector(".grouped-list").appendChild(node)
-            groupedlist.push(nameList.slice(i,i+groupnum))
+            node.innerText=(orderList.slice(i,i+groupnum).join(","));
+            ol.appendChild(node)
           }
         });
-        let input = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-        let size = 3;
-        for (let i = 0;  i < input.length; i += size) {
-          console.log(input.slice(i, i + size))
-        }
-
 
     </script>
 
