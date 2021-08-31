@@ -63,9 +63,9 @@
             -EX3) Write a selector to target the "continue reading..." inside the jumbotron
             -EX4) Write a selector to target the first blogpost
             -EX5) Write a selector to target the "even" links in the navbar
-            EX6) Write a selector to target the last blog post
-            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
-            EX8) Write a selector to target the second post author
+            -EX6) Write a selector to target the last blog post
+            -EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
+            -EX8) Write a selector to target the second post author
             -EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
             -EX10) Write a selector to target the footer
         */
@@ -90,18 +90,22 @@
         text-decoration-line: underline;
       }
 
-      .container main.container .row .blog-main .blog-post:last-child {
-        color: rgb(9, 218, 255) !important;
+      main.container .row .blog-main div.blog-post:nth-child(4) {
+        background-color: rgb(5, 5, 5) !important;
       }
 
-      .container main.container .row aside div.p-4 ol li:nth-child(2) {
-        color: rgb(1, 7, 8) !important;
+      main.container .row aside div:nth-child(2) {
+        background-color: rgb(5, 15, 15);
       }
       body footer {
         background-color: burlywood;
       }
       body p:last-child a:last-child {
         background-color: rgb(14, 11, 7);
+      }
+
+      main.container .row aside div:last-child {
+        background-color: rgb(211, 98, 46) !important;
       }
     </style>
     <link
