@@ -72,7 +72,7 @@
 
       /* EX1*/
       .jumbotron h1 {
-        color: rgb(241, 4, 4);
+        color: rgb(71, 241, 4);
       }
 
       /* EX2*/
@@ -81,13 +81,13 @@
       }
 
       /* EX3*/
-      .jumbotron p > a {
-        color: rgb(238, 223, 13);
+      .jumbotron .col-md-6 p:last-of-type a {
+        background-color: rgb(28, 107, 197);
       }
 
       /* EX4*/
       .row .col-md-6:first-child {
-        background-color: rgb(231, 235, 47);
+        background-color: rgb(78, 235, 47);
       }
       .row .col-md-6:last-child {
         background-color: rgb(231, 63, 63);
@@ -125,18 +125,18 @@
       body footer {
         background-color: burlywood;
       }
+
       /* EX10*/
-      body p:last-child a:last-child {
-        background-color: rgb(129, 98, 54);
+      body p:last-of-type > a {
+        background-color: rgb(230, 97, 74);
       }
 
-      main.container .row aside div:last-child {
-        color: rgb(66, 121, 73) !important;
+      main.container .row aside div   {
+        color: rgb(20, 238, 49) !important;
       }
-      .h11 {
-        color: black;
-        background-color: aquamarine;
-      }
+
+      
+
     </style>
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"
@@ -544,23 +544,41 @@
           EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
           EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
       */
-      document.querySelector("div > h1").addEventListener("click", function () {
-        let cod = document.querySelector("div > h1");
-        cod.style.color = "green";
+
+      /* EX11*/
+      document.querySelector(".nav").addEventListener("click", function () {
+        const newlink = document.querySelector(".nav");
+        let node = `<a class="p-2 text-muted" href="#">New Link</a>`
+        newlink.innerHTML+=node;
       });
 
-      document
-        .querySelector(".jumbotron")
-        .addEventListener("click", function () {
-          let cod = document.querySelector(".jumbotron");
-          cod.classList.add("h11");
+      /* EX12*/
+      document.querySelector(".jumbotron h1").addEventListener("click", function () {
+        let head = document.querySelector(".jumbotron h1");
+        head.style.color = "blue";
+      });
+
+      /* EX13*/
+      document.querySelector(".jumbotron").addEventListener("click", function() {
+          let tron = document.querySelector(".jumbotron");
+          tron.classList.remove("bg-dark");
         });
 
-      document.querySelector(".nav").addEventListener("click", function () {
-        const ol = document.querySelector(".nav");
-        let node = document.createElement("li");
-        ol.appendChild(node);
-      });
+        /* EX13*/
+      document.querySelector(".jumbotron").addEventListener("click", function() {
+          let tron = document.querySelector(".jumbotron");
+          tron.classList.remove("bg-dark");
+          tron.classList.remove("text-white");
+        });
+
+         /* EX14*/
+         document.querySelector('.p-4 h4 ol li').addEventListener("click", function() {
+
+         })
+
+
+
+
     </script>
   </body>
 </html>
