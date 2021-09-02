@@ -604,11 +604,12 @@
 
       /* EX17*/
       document
-        .querySelector("main.container .row .blog-main div.blog-post p")
+        .querySelectorAll(".blog-post p:nth-child(3)")
         .addEventListener("click", function () {
-          let intxt = document.querySelector(
-            "main.container .row .blog-main div.blog-post p"
-          );
+          let intxt = document.querySelector(".blog-post p:nth-child(3)");
+          for (let i of intxt) {
+            intxt.innerText = intxt.innerText.substring(100);
+          }
         });
 
       /* EX18*/
@@ -635,6 +636,16 @@
           let bt = document.querySelectorAll("blog-pagination a")[0];
           bt.removeAttribute("href");
           blg[blg.length - 1].remove();
+        });
+
+      /* EX20*/
+      document
+        .querySelectorAll("main .blog-main .blog-post > h2 + p > a")
+        .addEventListener("mouseenter", function () {
+          let obj = document.querySelector(
+            "main .blog-main .blog-post > h2 + p > a"
+          );
+          alart(obl.innerHTML);
         });
     </script>
   </body>
