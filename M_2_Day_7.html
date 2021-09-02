@@ -90,7 +90,7 @@
         background-color: rgb(78, 235, 47);
       }
       .row .col-md-6:last-child {
-        background-color: rgb(231, 63, 63);
+        background-color: rgb(235, 76, 76);
       }
 
       /* EX5*/
@@ -118,7 +118,7 @@
         div.blog-post:nth-child(3)
         p.blog-post-meta
         a {
-        background-color: rgb(224, 34, 34) !important;
+        background-color: rgb(219, 115, 115) !important;
       }
 
       /* EX9*/
@@ -130,13 +130,10 @@
       body p:last-of-type > a {
         background-color: rgb(230, 97, 74);
       }
-
-      main.container .row aside div   {
-        color: rgb(20, 238, 49) !important;
+      main.container div div nav a:last-child {
+        background-color: rgb(92, 90, 88) !important;
+        color: white;
       }
-
-      
-
     </style>
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"
@@ -532,53 +529,113 @@
 
     <script>
       /*
-          JS Exercises
-          EX11) Write a function to add a new link into the navbar
-          -EX12) Write a function to change the color of the main title
-          EX13) Write a function to change the background of the jumbotron
-          EX14) Write a function to remove all the links under "Elsewhere"
-          EX15) Write a function to change the column size for heading in jumbotron
-          EX16) Write a function to remove the "Search" magnifying glass icon
-          EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
-          EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
-          EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
-          EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
-      */
+                JS Exercises
+                EX11) Write a function to add a new link into the navbar
+                -EX12) Write a function to change the color of the main title
+                EX13) Write a function to change the background of the jumbotron
+                EX14) Write a function to remove all the links under "Elsewhere"
+                EX15) Write a function to change the column size for heading in jumbotron
+                EX16) Write a function to remove the "Search" magnifying glass icon
+                EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
+                EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
+                EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
+                EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+            */
 
       /* EX11*/
       document.querySelector(".nav").addEventListener("click", function () {
         const newlink = document.querySelector(".nav");
-        let node = `<a class="p-2 text-muted" href="#">New Link</a>`
-        newlink.innerHTML+=node;
+        let node = `<a class="p-2 text-muted" href="#">New Link</a>`;
+        newlink.innerHTML += node;
       });
 
       /* EX12*/
-      document.querySelector(".jumbotron h1").addEventListener("click", function () {
-        let head = document.querySelector(".jumbotron h1");
-        head.style.color = "blue";
-      });
+      document
+        .querySelector(".jumbotron h1")
+        .addEventListener("click", function () {
+          let head = document.querySelector(".jumbotron h1");
+          head.style.color = "blue";
+        });
 
       /* EX13*/
-      document.querySelector(".jumbotron").addEventListener("click", function() {
+      document
+        .querySelector(".jumbotron")
+        .addEventListener("click", function () {
           let tron = document.querySelector(".jumbotron");
           tron.classList.remove("bg-dark");
         });
 
-        /* EX13*/
-      document.querySelector(".jumbotron").addEventListener("click", function() {
+      /* EX13*/
+      document
+        .querySelector(".jumbotron")
+        .addEventListener("click", function () {
           let tron = document.querySelector(".jumbotron");
           tron.classList.remove("bg-dark");
           tron.classList.remove("text-white");
         });
 
-         /* EX14*/
-         document.querySelector('.p-4 h4 ol li').addEventListener("click", function() {
+      /* EX14*/
+      document
+        .querySelector("main.container .row aside div:last-child")
+        .addEventListener("click", function () {
+          let item = document.querySelector(
+            "main.container .row aside div:last-child"
+          );
+          item.innerHTML = "";
+        });
 
-         })
+      /* EX15*/
+      document
+        .querySelector(".row .col-md-6")
+        .addEventListener("click", function () {
+          let item = document.querySelector(".row .col-md-6:first-child");
+          let item1 = document.querySelector(".row .col-md-6:last-child");
+          item.classList.replace("col-md-6", "col-md-9");
+          item1.classList.replace("col-md-6", "col-md-9");
+        });
 
+      /* EX16*/
+      document
+        .querySelector("header div.d-flex a:first-child")
+        .addEventListener("click", function () {
+          let obj = document.querySelector("header div.d-flex a:first-child");
+          obj.children[0].remove();
+        });
 
+      /* EX17*/
+      document
+        .querySelector("main.container .row .blog-main div.blog-post p")
+        .addEventListener("click", function () {
+          let intxt = document.querySelector(
+            "main.container .row .blog-main div.blog-post p"
+          );
+        });
 
+      /* EX18*/
+      document
+        .querySelector("main.container div div nav a:last-child")
+        .addEventListener("click", function () {
+          let x = document.querySelector(
+            "main.container div div nav a:last-child"
+          );
+          x.classList.remove("disabled");
+          x.removeAttribute("href");
+          let bg = document.querySelector(".blog-main");
+          let txt = ` <div class="blog-post">
+            <h2 class="blog-post-title">New blog</h2>
+          </div>`;
+          bg.innerHTML += txt;
+        });
 
+      /* EX19*/
+      document
+        .querySelector("main.container div div nav a:first-child")
+        .addEventListener("click", function () {
+          let blg = document.querySelectorAll(".blog-post");
+          let bt = document.querySelectorAll("blog-pagination a")[0];
+          bt.removeAttribute("href");
+          blg[blg.length - 1].remove();
+        });
     </script>
   </body>
 </html>
