@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Day 8</title>
+    <style>
+      .first-column {
+        height: 400px;
+        padding: 15%;
+        text-align: center;
+        border: 2px solid rgb(3, 3, 3);
+        border-radius: 50px 0px 0px 50px;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <title>Day 8</title>
-  <style>
-    .first-column {
-      height: 400px;
-      padding: 15%;
-      text-align: center;
-      border: 2px solid rgb(3, 3, 3);
-      border-radius: 50px 0px 0px 50px;
-    }
+      .second-column {
+        padding-bottom: 5%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
 
-    .second-column {
-      padding-bottom: 5%;
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
-    }
+      .last-column-1 {
+        background-color: rgb(233, 236, 37);
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 0px 50px 0px 0px;
+        text-align: center;
+      }
 
-    .last-column-1 {
-      background-color: rgb(233, 236, 37);
-      border-top: 2px solid black;
-      border-right: 2px solid black;
-      border-radius: 0px 50px 0px 0px;
-      text-align: center;
-    }
+      .last-column-2 {
+        background-color: rgb(194, 191, 18);
+        border-right: 2px solid black;
+        text-align: center;
+      }
 
-    .last-column-2 {
-      background-color: rgb(194, 191, 18);
-      border-right: 2px solid black;
-      text-align: center;
-    }
+      .last-column-3 {
+        background-color: rgb(161, 159, 11);
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 0px 0px 50px 0px;
+        text-align: center;
+      }
 
-    .last-column-3 {
-      background-color: rgb(161, 159, 11);
-      border-bottom: 2px solid black;
-      border-right: 2px solid black;
-      border-radius: 0px 0px 50px 0px;
-      text-align: center;
-    }
+      .list-group-item {
+        padding: 7px;
+      }
+    </style>
+  </head>
 
-    .list-group-item {
-      padding: 7px;
-    }
-  </style>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <div class="container">
-      <a class="navbar-brand" href="#">Navbar w/ text</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-        <span class="navbar-text"> Navbar text with an inline element </span>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text"> Navbar text with an inline element </span>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="first section">
-    <div class="container mb-5 mt-5">
-      <h1 class="display-4 text-muted text-center mb-5">Exercise 1</h1>
-      <p class="lead text-muted text-center mt-5 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
-        quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
-        voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
-        eligendi nulla perspiciatis neque.
-      </p>
+    <div class="first section">
+      <div class="container mb-5 mt-5">
+        <h1 class="display-4 text-muted text-center mb-5">Exercise 1</h1>
+        <p class="lead text-muted text-center mt-5 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
+          quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
+          voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
+          eligendi nulla perspiciatis neque.
+        </p>
 
-      <div class="row">
-        <div class="
+        <div class="row">
+          <div
+            class="
               col-xs-12 col-md-6
               bg-success
               d-flex
@@ -95,11 +114,13 @@
               justify-content-center
               text-light
               first-column
-            ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
 
-        <div class="
+          <div
+            class="
               col-xs-12 col-md-2
               bg-primary
               d-flex
@@ -107,469 +128,551 @@
               justify-content-end
               text-light
               second-column
-            ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-
-        <div class="col-xs-12 col-md-4">
-          <div class="row h-100">
-            <div class="last-column-1 col-sm-12 d-flex">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-            <div class="last-column-2 col-sm-12 d-flex">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
-            <div class="last-column-3 col-sm-12 d-flex">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </div>
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="second section">
-    <div class="container mb-5 mt-5">
-      <h1 class="display-4 text-muted text-center mt-5 mb-5">Exercise 2</h1>
-      <p class="lead text-muted text-center mt-5 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
-        quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
-        voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
-        eligendi nulla perspiciatis neque.
-      </p>
-
-      <div class="row">
-        <div class="my-1 col-12 col-sm-6 col-md-4">
-          <div class="card">
-            <h5 class="card-header text-center">Card Header</h5>
-            <div class="card-body">
-              <h1 class="card-title display-6 text-center mb-3 mt-3 text-muted">
-                20$/mo
-              </h1>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0 text-center">
-                  item description
-                </li>
-                <li class="list-group-item border-0 text-center">
-                  item price
-                </li>
-                <li class="list-group-item border-0 text-center">
-                  item type
-                </li>
-              </ul>
-              <button class="btn btn-outline-primary w-100 h-1">
-                Sign Up For Free
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="my-2 col-12 col-sm-6 col-md-4">
-          <div class="card">
-            <h5 class="card-header text-center">Card Header</h5>
-            <div class="card-body">
-              <h1 class="card-title display-6 text-center mb-3 mt-3 text-muted">
-                20$/mo
-              </h1>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0 text-center">
-                  item description
-                </li>
-                <li class="list-group-item border-0 text-center">
-                  item price
-                </li>
-                <li class="list-group-item border-0 text-center">
-                  item type
-                </li>
-              </ul>
-              <button class="btn btn-outline-primary w-100">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="my-3 col-12 col-sm-6 col-md-4">
-          <div class="card">
-            <h5 class="card-header text-center">Card Header</h5>
-            <div class="card-body">
-              <h1 class="card-title display-6 text-center mb-3 mt-3 text-muted">
-                20$/mo
-              </h1>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0 text-center">
-                  item description
-                </li>
-                <li class="list-group-item border-0 text-center">
-                  item price
-                </li>
-                <li class="list-group-item border-0 text-center">
-                  item type
-                </li>
-              </ul>
-              <button class="btn btn-outline-primary w-100">
-                Contact us
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container"></div>
-    </div>
-  </div>
-
-  <div class="third section">
-    <div class="container mb-5 mt-5">
-      <h1 class="display-4 text-muted text-center mt-5 mb-5">Exercise 3</h1>
-      <p class="lead text-muted text-center mt-5 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
-        quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
-        voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
-        eligendi nulla perspiciatis neque.
-      </p>
-
-      <div class="row">
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
+          <div class="col-xs-12 col-md-4">
+            <div class="row h-100">
+              <div class="last-column-1 col-sm-12 d-flex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
+              <div class="last-column-2 col-sm-12 d-flex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="card">
-            <img src="http://placehold.it/300" alt="img" class="card-img-top" />
-            <div class="card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="
-                    card-body
-                    d-flex
-                    align-items-center
-                    justify-content-between
-                  ">
-                <div class="btn-group btn-group-sm me-2">
-                  <button class="btn btn-outline-primary">View</button>
-                  <button class="btn btn-outline-primary">Edit</button>
-                </div>
-                <span class="text-muted align-items-">3 mins</span>
+              <div class="last-column-3 col-sm-12 d-flex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="forth section">
-    <div class="container mb-5 mt-5">
+    <div class="second section">
+      <div class="container mb-5 mt-5">
+        <h1 class="display-4 text-muted text-center mt-5 mb-5">Exercise 2</h1>
+        <p class="lead text-muted text-center mt-5 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
+          quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
+          voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
+          eligendi nulla perspiciatis neque.
+        </p>
 
-      <h1 class="display-4 text-muted text-center mt-5 mb-5">Exercise 4</h1>
-      <p class="lead text-muted text-center mt-5 mb-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
-        quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
-        voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
-        eligendi nulla perspiciatis neque.
-      </p>
-
-      <div class="row">
-        <div class="col-sm-12 col-md-8">
-          <div class="card border-0">
-            <h3 class="mb-4">
-              Page Heading <span class="text-muted">Secondary Text</span>
-            </h3>
-            <img src="http://placehold.it/750x300" alt="" />
-            <div class="card-body">
-              <h4>Post Title</h4>
-              <p class="text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repudiandae, vero consequuntur. Odio aliquam impedit odit
-                magni aliquid explicabo exercitationem eligendi expedita
-                tempore sunt. Voluptatum magnam, unde vero optio modi debitis.
-              </p>
-              <button class="btn btn-primary">
-                Read More <i class="bi bi-arrow-right"></i>
-              </button>
-              <hr />
-              <p class="text-muted mt-4 border-top-1">
-                Posted on January 12,2020 by
-                <span class="text-info">Admin</span>
-              </p>
-              <hr />
-            </div>
-          </div>
-          <div class="card border-0">
-            <h3 class="mb-4">
-              Page Heading <span class="text-muted">Secondary Text</span>
-            </h3>
-            <img src="http://placehold.it/750x300" alt="" />
-            <div class="card-body">
-              <h4>Post Title</h4>
-              <p class="text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repudiandae, vero consequuntur. Odio aliquam impedit odit
-                magni aliquid explicabo exercitationem eligendi expedita
-                tempore sunt. Voluptatum magnam, unde vero optio modi debitis.
-              </p>
-              <button class="btn btn-primary">
-                Read More <i class="bi bi-arrow-right"></i>
-              </button>
-              <hr />
-              <p class="text-muted mt-4 border-top-1">
-                Posted on January 12,2020 by
-                <span class="text-info">Admin</span>
-              </p>
-              <hr />
-            </div>
-          </div>
-          <div class="card border-0">
-            <h3 class="mb-4">
-              Page Heading <span class="text-muted">Secondary Text</span>
-            </h3>
-            <img src="http://placehold.it/750x300" alt="" />
-            <div class="card-body">
-              <h4>Post Title</h4>
-              <p class="text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Repudiandae, vero consequuntur. Odio aliquam impedit odit
-                magni aliquid explicabo exercitationem eligendi expedita
-                tempore sunt. Voluptatum magnam, unde vero optio modi debitis.
-              </p>
-              <button class="btn btn-primary">
-                Read More <i class="bi bi-arrow-right"></i>
-              </button>
-              <hr />
-              <p class="text-muted mt-4 border-top-1">
-                Posted on January 12,2020 by
-                <span class="text-info">Admin</span>
-              </p>
-              <hr />
-              <div class="btn-group d-flex justify-content-center">
-                <button style="background-color: white; border: rgb(29, 29, 27);"><i class="bi bi-arrow-left"></i>
-                  Older</button>
-                <button class="">Newer <i class="bi bi-arrow-right"></i></button>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-
-
-
-        <div class="col-sm-12 col-md-4">
-          <div class="card mb-5">
-            <div class="card-header">
-              <h4>Find in my blog</h4>
-            </div>
-            <div class="card-body d-flex justify-content-center">
-              <input type="text" placeholder="Search for...">
-              <button class="btn-secondary">Search</button>
-            </div>
-          </div>
-
-          <div class="card mb-5">
-            <div class="card-header">
-              <h4>Categories</h4>
-            </div>
-            <div class="card-body d-flex justify-content-start">
-              <div class="row">
+        <div class="row">
+          <div class="my-1 col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <h5 class="card-header text-center">Card Header</h5>
+              <div class="card-body">
+                <h1
+                  class="card-title display-6 text-center mb-3 mt-3 text-muted"
+                >
+                  20$/mo
+                </h1>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item border-0 mb-0">Web Design</li>
-                  <li class="list-group-item border-0 mb-0">HTML</li>
-                  <li class="list-group-item border-0 mb-0">CSS</li>
-              </div>
-              <div class="row">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item border-0 mb-0">Java Script</li>
-                  <li class="list-group-item border-0 mb-0">SASS</li>
-                  <li class="list-group-item border-0 mb-0">Bootstrap4</li>
+                  <li class="list-group-item border-0 text-center">
+                    item description
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item price
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item type
+                  </li>
                 </ul>
+                <button class="btn btn-outline-primary w-100 h-1">
+                  Sign Up For Free
+                </button>
               </div>
+            </div>
+          </div>
+          <div class="my-2 col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <h5 class="card-header text-center">Card Header</h5>
+              <div class="card-body">
+                <h1
+                  class="card-title display-6 text-center mb-3 mt-3 text-muted"
+                >
+                  20$/mo
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0 text-center">
+                    item description
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item price
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item type
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary w-100">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="my-3 col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <h5 class="card-header text-center">Card Header</h5>
+              <div class="card-body">
+                <h1
+                  class="card-title display-6 text-center mb-3 mt-3 text-muted"
+                >
+                  20$/mo
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0 text-center">
+                    item description
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item price
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item type
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary w-100">
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="container"></div>
+      </div>
+    </div>
+
+    <div class="third section">
+      <div class="container mb-5 mt-5">
+        <h1 class="display-4 text-muted text-center mt-5 mb-5">Exercise 3</h1>
+        <p class="lead text-muted text-center mt-5 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
+          quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
+          voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
+          eligendi nulla perspiciatis neque.
+        </p>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card mb-5">
-            <div class="card-header">
-              <h4>Widgets</h4>
-            </div>
-            <div class="card-body d-flex justify-content-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
             </div>
           </div>
 
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div
+                  class="
+                    card-body
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                >
+                  <div class="btn-group btn-group-sm me-2">
+                    <button class="btn btn-outline-primary">View</button>
+                    <button class="btn btn-outline-primary">Edit</button>
+                  </div>
+                  <span class="text-muted align-items-">3 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-</body>
+    <div class="forth section">
+      <div class="container mb-5 mt-5">
+        <h1 class="display-4 text-muted text-center mt-5 mb-5">Exercise 4</h1>
+        <p class="lead text-muted text-center mt-5 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
+          quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
+          voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
+          eligendi nulla perspiciatis neque.
+        </p>
 
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h3 class="">
+              Page Heading <span class="text-muted">Secondary Text</span>
+            </h3>
+            <div class="card mt-3 mb-5">
+              <img src="http://placehold.it/750x300" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Post Title</h4>
+                <p class="card-text text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, vero consequuntur. Odio aliquam impedit odit
+                  magni aliquid explicabo exercitationem eligendi expedita
+                  tempore sunt. Voluptatum magnam, unde vero optio modi debitis.
+                </p>
+                <button class="btn btn-primary">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+              <div class="card-footer">
+                Posted on January 12,2020 by <a href="">Admin</a>
+              </div>
+            </div>
+
+            <h3 class="">
+              Page Heading <span class="text-muted">Secondary Text</span>
+            </h3>
+            <div class="card mt-3 mb-5">
+              <img src="http://placehold.it/750x300" alt="" />
+              <div class="card-body">
+                <h4>Post Title</h4>
+                <p class="text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, vero consequuntur. Odio aliquam impedit odit
+                  magni aliquid explicabo exercitationem eligendi expedita
+                  tempore sunt. Voluptatum magnam, unde vero optio modi debitis.
+                </p>
+                <button class="btn btn-primary">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+              <div class="card-footer">
+                Posted on January 12,2020 by <a href="">Admin</a>
+              </div>
+            </div>
+
+            <h3 class="">
+              Page Heading <span class="text-muted">Secondary Text</span>
+            </h3>
+            <div class="card mt-3 mb-4">
+              <img src="http://placehold.it/750x300" alt="" />
+              <div class="card-body">
+                <h4>Post Title</h4>
+                <p class="text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, vero consequuntur. Odio aliquam impedit odit
+                  magni aliquid explicabo exercitationem eligendi expedita
+                  tempore sunt. Voluptatum magnam, unde vero optio modi debitis.
+                </p>
+                <button class="btn btn-primary">
+                  Read More <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+              <div class="card-footer">
+                Posted on January 12,2020 by <a href="">Admin</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <button><i class="bi bi-arrow-left"></i><a> Older</a></button>
+              <button><a>Newer</a> <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4">
+            <div class="card mb-5">
+              <div class="card-header">
+                <h4>Find in my blog</h4>
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <input type="text" placeholder="Search for..." />
+                <button class="btn-secondary">Search</button>
+              </div>
+            </div>
+
+            <div class="card mb-5">
+              <div class="card-header">
+                <h4>Categories</h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <a class="d-block">Web Design</a>
+                    <a class="d-block">HTML</a>
+                    <a class="d-block">CSS</a>
+                  </div>
+                  <div class="col">
+                    <a class="d-block">Java script</a>
+                    <a class="d-block">HTM</a>
+                    <a class="d-block">CSS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-5">
+              <div class="card-header">
+                <h4>Widgets</h4>
+              </div>
+              <div class="card-body d-flex justify-content-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fifth section">
+      <div class="container mb-5 mt-5">
+        <h1 class="display-4 text-muted text-center mt-5 mb-0">Exercise 5</h1>
+        <p class="lead text-muted text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <hr />
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h4>Features</h4>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h4>Resource</h4>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h4>About</h4>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+            <a class="d-block text-muted">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
