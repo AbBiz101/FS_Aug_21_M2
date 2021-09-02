@@ -14,65 +14,241 @@
     />
     <title>Day 8</title>
     <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-            align-items:flex-start;
-            flex-basis: content;
-        }
-        .flex-container > div {
-            color: white;
-            text-align: center;
-            border: 2px solid black;
-            
-        }
-        .flex-container > div:first-child {
-            background-color: rgb(16, 235, 89);
-            border-radius:  25px 0px 0px 25px;
-            color: white;
-            width: 400px;
-            height: 350px;
-            display: inline-block;
-        }
-        .flex-container > div:nth-child(2) {
-            background-color: rgb(62, 94, 236);
-            width: 100px;
-            height: 350px;
-            display: inline-block;
-        }
-        .flex-container > div:last-child {
-            display: inline-block;
-            background-color: rgb(227, 238, 75);
-            border-radius:0px 25px 25px 0px;
-            width: 400px;
-            height: 350px;
-        }
+      .first-column {
+        height: 400px;
+        padding: 15%;
+        text-align: center;
+        border: 2px solid rgb(3, 3, 3);
+        border-radius: 50px 0px 0px 50px;
+      }
 
+      .second-column {
+        padding-bottom: 5%;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
 
+      .last-column-1 {
+        background-color: rgb(233, 236, 37);
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 0px 50px 0px 0px;
+        text-align: center;
+      }
 
+      .last-column-2 {
+        background-color: rgb(194, 191, 18);
+        border-right: 2px solid black;
+        text-align: center;
+      }
+
+      .last-column-3 {
+        background-color: rgb(161, 159, 11);
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 0px 0px 50px 0px;
+        text-align: center;
+      }
+      .list-group-item {
+        padding: 7px;
+      }
     </style>
   </head>
+
   <body>
-    <nav class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar<a>
-        <a class="navbar-brand" href="#">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text"> Navbar text with an inline element </span>
+        </div>
+      </div>
     </nav>
 
-    <h1>Exercise 1</h1>
-    <div class="flex-container d-flex offset-2">
-            <div class="flex-items"> text
-                </div>
-            <div class="flex-items"> text
-                </div>
-            <div class="flex-items"> 
-                <div class="part-1 d-flex" style="background-color: black;"> part-1
-                </div>
-                <div class="part-2" style="background-color: rgb(148, 160, 46);"> part-2
-                </div>
-                <div class="part-3" style="background-color: rgb(233, 230, 90);"> part-3
-                </div>
+    <div class="first section">
+      <div class="container mb-5 mt-5">
+        <h1 class="display-4 text-muted text-center mb-5">Exercise 1</h1>
+        <p class="lead text-muted text-center mt-5 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
+          quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
+          voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
+          eligendi nulla perspiciatis neque.
+        </p>
+
+        <div class="row">
+          <div
+            class="
+              col-xs-12 col-md-6
+              bg-success
+              d-flex
+              align-items-center
+              justify-content-center
+              text-light
+              first-column
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+
+          <div
+            class="
+              col-xs-12 col-md-2
+              bg-primary
+              d-flex
+              flex-column
+              justify-content-end
+              text-light
+              second-column
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="row h-100">
+              <div class="last-column-1 col-sm-12 d-flex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="last-column-2 col-sm-12 d-flex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="last-column-3 col-sm-12 d-flex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="second section">
+      <div class="container mb-5 mt-5">
+        <h1 class="display-4 text-muted text-center mt-5 mb-5">Exercise 2</h1>
+        <p class="lead text-muted text-center mt-5 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio
+          quas ipsam eos quod laudantium maxime delectus praesentium laboriosam
+          voluptates omnis ullam officiis necessitatibus excepturi nesciunt,
+          eligendi nulla perspiciatis neque.
+        </p>
+
+        <div class="row">
+          <div class="my-1 col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <h5 class="card-header text-center">Card Header</h5>
+              <div class="card-body">
+                <h1
+                  class="card-title display-6 text-center mb-3 mt-3 text-muted"
+                >
+                  20$/mo
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0 text-center">
+                    item description
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item price
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item type
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary w-100 h-1">
+                  Sign Up For Free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="my-2 col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <h5 class="card-header text-center">Card Header</h5>
+              <div class="card-body">
+                <h1
+                  class="card-title display-6 text-center mb-3 mt-3 text-muted"
+                >
+                  20$/mo
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0 text-center">
+                    item description
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item price
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item type
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary w-100">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="my-3 col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <h5 class="card-header text-center">Card Header</h5>
+              <div class="card-body">
+                <h1
+                  class="card-title display-6 text-center mb-3 mt-3 text-muted"
+                >
+                  20$/mo
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0 text-center">
+                    item description
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item price
+                  </li>
+                  <li class="list-group-item border-0 text-center">
+                    item type
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary w-100">
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container"></div>
+      </div>
+    </div>
+
+    <div class="third section">
+      <div class="container">
+        <div class="row">
+          <div class="my-1 col-sm-6 col-md-3 col-lg-4">amet</div>
+          <div class="my-2 col-sm-6 col-md-3 col-lg-4">amet</div>
+          <div class="my-3 col-sm-6 col-md-3 col-lg-4">amet</div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
