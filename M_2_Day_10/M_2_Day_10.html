@@ -18,165 +18,220 @@
       href="./asset/favicon-32x32.png"
       sizes="32x32"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>GOG.com</title>
-    <style>
-      .nav-bar {
-        background-color: black;
-        color: white;
-        font-weight: ;
-      }
-    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg nav-bar">
-      <a class="navbar-brand" href="#"
-        ><img src="./asset/1200px-GOG.com_logo.svg.png" width="50px" alt=""
-      /></a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="navbar-brand dropdown-toggle text-muted font-weight-bold"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              href="#"
-              >GAMES</a
+    <nav class="d-flex navbar navbar-expand-lg nav-bar">
+      <div class="row">
+        <div
+          class="
+            col-12 col-md-8
+            offset-md-2
+            d-flex
+            collapse
+            justify-content-space-even
+            navbar-collapse
+          "
+          id="navbarSupportedContent"
+        >
+          <a class="navbar-brand" href="#"
+            ><img src="./asset/1200px-GOG.com_logo.svg.png" width="50px" alt=""
+          /></a>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="navbar-brand dropdown-toggle text-muted font-weight-bold"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                >GAMES</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#"
+                  ><span class="font-weight-bold">Cyberpunk 2070</span></a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"
+                  ><span class="font-weight-bold"
+                    >Released
+                    <div></div> </span
+                ></a>
+                <a class="dropdown-item" href="#"
+                  ><span class="font-weight-bold">Popular titles</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="font-weight-bold">On offer</span></a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">Action</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">adventure</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">in the</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">Role playing game</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">Shooter</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">Simulation</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">Sport & racing games</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">Sstrategy</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="text-muted">Films for gamers</span></a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <span class="text-muted">All games</span></a
+                >
+              </div>
+            </li>
+            <a class="navbar-brand text-muted font-weight-bold" href="#"
+              >RPG MONTH</a
             >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#"
-                ><span class="font-weight-bold">Cyberpunk 2070</span></a
-              >
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#"
-                ><span class="font-weight-bold"
-                  >Released
-                  <div></div></span
-              ></a>
-              <a class="dropdown-item" href="#"
-                ><span class="font-weight-bold">Popular titles</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="font-weight-bold">On offer</span></a
-              >
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">Action</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">adventure</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">in the</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">Role playing game</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">Shooter</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">Simulation</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">Sport & racing games</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">Sstrategy</span></a
-              >
-              <a class="dropdown-item" href="#"
-                ><span class="text-muted">Films for gamers</span></a
-              >
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span class="text-muted">All games</span></a
-              >
-            </div>
-          </li>
-          <a class="navbar-brand text-muted font-weight-bold" href="#"
-            >RPG MONTH</a
-          >
 
-          <li class="nav-item dropdown">
-            <a
-              class="navbar-brand dropdown-toggle text-muted font-weight-bold"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              href="#"
-              >INFO</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">GOG.com</a>
-              <a class="dropdown-item" href="#">GOG Galaxy</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Become part of the team</a>
-            </div>
-          </li>
+            <li class="nav-item dropdown">
+              <a
+                class="navbar-brand dropdown-toggle text-muted font-weight-bold"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                >INFO</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">GOG.com</a>
+                <a class="dropdown-item" href="#">GOG Galaxy</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Become part of the team</a>
+              </div>
+            </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="navbar-brand dropdown-toggle text-muted font-weight-bold"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              href="#"
-              >FORUM</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Cyberpunk 2070</a>
-              <a class="dropdown-item" href="#">Cyberpunk 2070</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Released</a>
-              <a class="dropdown-item" href="#">Popular titles</a>
-              <a class="dropdown-item" href="#">On offer</a>
-            </div>
-          </li>
+            <li class="nav-item dropdown">
+              <a
+                class="navbar-brand dropdown-toggle text-muted font-weight-bold"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                >FORUM</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Cyberpunk 2070</a>
+                <a class="dropdown-item" href="#">Cyberpunk 2070</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Released</a>
+                <a class="dropdown-item" href="#">Popular titles</a>
+                <a class="dropdown-item" href="#">On offer</a>
+              </div>
+            </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="navbar-brand dropdown-toggle text-muted font-weight-bold"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              href="#"
-              >HELP</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Cyberpunk 2070</a>
-              <a class="dropdown-item" href="#">Cyberpunk 2070</a>
-              <a class="dropdown-item" href="#">Released</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+            <li class="nav-item dropdown">
+              <a
+                class="navbar-brand dropdown-toggle text-muted font-weight-bold"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                >HELP</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Cyberpunk 2070</a>
+                <a class="dropdown-item" href="#">Cyberpunk 2070</a>
+                <a class="dropdown-item" href="#">Released</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="navbar-brand dropdown-toggle text-muted font-weight-bold"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                ><span style="color: rgb(168, 62, 168)">LOG IN </span></a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Cyberpunk 2070</a>
+                <a class="dropdown-item" href="#">Cyberpunk 2070</a>
+                <a class="dropdown-item" href="#">Released</a>
+              </div>
+            </li>
+          </ul>
+          <i class="bi bi-cart4"></i>
+          <i class="bi bi-search"></i>
+        </div>
       </div>
     </nav>
+    <div class="jumbotron jumbotron-fluid p-0 m-0">
+      <div class="container-fluid px-0 mt-0">
+        <h1 class="display-4">
+          <img src="/M_2_Day_10/asset/carousel5.jpg" alt="" />
+        </h1>
+        <span style="position: absolute; top: 370px; left: 50px"
+          ><img src="/M_2_Day_10/asset/win-icon.png" width="20px" /><img
+            src="/M_2_Day_10/asset/apple-icon.png"
+            width="15px"
+          />
+          <span style="color: white">Now available</span>
+        </span>
+        <h3 style="position: absolute; top: 400px; left: 50px; color: white">
+          Pathfinder:Wrath of the Righteous
+        </h3>
+        <h3 style="position: absolute; top: 400px; right: 50px; color: white">
+          49.99€
+          <span
+            style="
+              padding: 10px;
+              border-radius: 5px;
+              background-color: yellowgreen;
+              border: 2px solid yellowgreen;
+              color: rgb(10, 10, 10);
+            "
+            ><i class="bi bi-cart-check-fill"></i> In the shopping trolley</span
+          >
+        </h3>
+      </div>
+    </div>
+    <div class="contenrt">
+
+    </div>
+
+
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
