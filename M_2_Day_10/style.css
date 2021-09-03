@@ -1,8 +1,74 @@
+body {
+    background-color: rgb(6, 3, 41);
+}
 .nav-bar {
+    position: relative;
   background-color: black;
   color: white;
-  position: static;
+  position: sticky;
+  top:0
+}
+hr {
+    border: 0.01em solid rgb(122, 15, 172);
 }
 .jumbotron {
+  position: relative;
+  
+}
+
+.jumbotron .txt-1 {
+  position: absolute;
+  top: 340px;
+  color: rgb(248, 245, 245);
+  font-size: small;
+}
+.jumbotron .txt-2 {
+  position: absolute;
+  top: 362px;
+  font-weight: 140%;
+  color: rgb(255, 248, 248);
+}
+.jumbotron .txt-3 {
+  position: absolute;
+  top: 360px;
+  right: 130px;
+  font-weight: 240%;
+  color: rgb(255, 248, 248);
+}
+.txt-4 {
+  position: relative;
+}
+.btn-txt-4 {
+  position: absolute;
+  background-color: yellowgreen;
+  border: 0px;
+  padding: -2px;
+  top: -50px;
+  right: -700px;
+}
+
+.carouselIndicators {
+  background-color: rgb(9, 18, 105) !important;
+  height: 5px !important;
+  width: 50px !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block !important;
+  width: 20px !important;
+  height: 100px !important;
+  background: 50%/100% 100% no-repeat !important;
+  background-color: black;
+}
+.btn-outline-primary {
+  background-color: rgb(245, 84, 205) !important;
+  color: black !important;
+  font-weight: bold;
+  border: 0px;
+}
+.card-body {
+  background-color: rgb(74, 18, 126);
+  color: white;
   position: relative;
 }
