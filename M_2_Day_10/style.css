@@ -1,19 +1,19 @@
 body {
-    background-color: rgb(6, 3, 41);
+  background-color: rgb(6, 3, 41);
 }
 .nav-bar {
-    position: relative;
+  position: relative;
   background-color: black;
   color: white;
   position: sticky;
-  top:0
+  top: 0;
+  z-index: 10;
 }
 hr {
-    border: 0.01em solid rgb(122, 15, 172);
+  border: 0.01em solid rgb(122, 15, 172);
 }
 .jumbotron {
   position: relative;
-  
 }
 
 .jumbotron .txt-1 {
